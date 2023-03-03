@@ -264,4 +264,3 @@ import {
   
   export { services, technologies, experiences, testimonials, projects };
   Footer
-  © 2023 GitHub, Inc.
