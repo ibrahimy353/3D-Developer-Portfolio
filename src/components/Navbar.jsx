@@ -15,18 +15,19 @@ const Navbar = () => {
 
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link 
-         to= '/'
-         className='flex items-center gap-2'
-         onClick={() => {
-          setActive ("");
-          window.scrollTo(0, 0);
-         }}
-         >
-        <img src={logo} alt='logo' className='w-9  h-9 object-contain'/>
-        <p className= 'text-white text-[18px] font-bold cursor-pointer'>
-          Ibrahim <span className='sm:block hidden'>
-          | Portfolio </span>
-        </p>
+          to= '/'
+          className='flex items-center gap-2'
+          onClick={() => {
+            setActive ("");
+            window.scrollTo(0, 0);
+          }}
+          >
+          <img src={logo} alt='logo' className='w-9  h-9 object-contain'/>
+          <p className= 'text-white text-[18px] font-bold cursor-pointer flex'>
+            Ibrahim 
+            <span className='sm:block hidden'>|
+            Portfolio </span>
+          </p>
         </Link> 
     
     {/* links to the about, contact section and menu */}
@@ -70,7 +71,7 @@ const Navbar = () => {
                 : "text-secondary" // when the link is not active it diplays white bt when active shows grey/secondary color
               } font-poppins font-medium cursor-pointer text-[16px]`}
               onClick={() => {
-                setToggle(!toggle);
+                setToggle(!toggle);//automatically closes the menu once the linked is clicked
                 setActive(link.title);
               }}
             >
