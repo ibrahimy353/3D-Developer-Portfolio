@@ -16,12 +16,12 @@ absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
               Hi, I'm <span className="text-[#914eff]">Ibrahim</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop crazy 3D visuals, user <br  className="sm:block" hidden/>
+              I develop crazy user <br  className="sm:block" hidden/>
               interfaces and web applications
             </p>
           </div>
-      </div>
-
+        </div>
+      <ComputersCanvas />
     </section>
     )
 }
