@@ -42,7 +42,7 @@ const About = () => {
      I'm a web developer located in Nairobi and an explorer who wanders the digital ocean of technologies 
      intending to gather the best Tech tools and utilizing them to design, develop, and deploy quality websites 
      and web applications on the internet. Among the tools that I make use of are; Html, CSS, Javascript, 
-     and its framework React JS, J-query, and Node js.
+     and its framework React JS, and Node js for back-end.
      
      I'm a Well-organized person, problem solver, independent employee with high attention to detail. 
      English literature and football fanatic I'm also an Automations Eng. with a bachelor's Degree in Electrical and Electronics 
