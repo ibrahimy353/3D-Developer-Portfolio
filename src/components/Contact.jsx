@@ -23,11 +23,58 @@ const Contact = () => {
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div 
-        varients= {slideIn('left', "tween", 0.2, 1)}
+        varients= {slideIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
           <p className={styles.sectionSubText}> Get in Touch</p>
           <h3 className={styles.sectionHeadText}> contact</h3>
+
+          <form 
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className='mt-12 flex flex-col gap-8'>
+              
+            <label className=' flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your Name</span>
+
+              <input 
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="what's your name?"
+                className='bg-tertiary py-6 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-nonr font-medium ' />
+
+            </label>
+            <label className=' flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your Name</span>
+
+              <input 
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="what's your name?"
+                className='bg-tertiary py-6 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-nonr font-medium ' />
+
+            </label>
+            <label className=' flex flex-col'>
+              <span className='text-white font-medium mb-4'>Your Name</span>
+
+              <input 
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="what's your name?"
+                className='bg-tertiary py-6 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-nonr font-medium ' />
+
+            </label>
+
+
+
+
+            </form>
       </motion.div>
     </div>
   )
