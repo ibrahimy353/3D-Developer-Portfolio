@@ -32,9 +32,10 @@ const Contact = () => {
           <form 
             ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8'>
+            className='mt-12 flex flex-col gap-8'
+          >
               
-            <label className=' flex flex-col'>
+            <label className='flex flex-col'>
               <span className='text-white font-medium mb-4'>Your Name</span>
 
               <input 
@@ -47,30 +48,36 @@ const Contact = () => {
 
             </label>
             <label className=' flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Name</span>
+              <span className='text-white font-medium mb-4'>Your Email</span>
 
               <input 
-                type="text"
-                name="name"
-                value={form.name}
+                type="email"
+                name="email"
+                value={form.email}
                 onChange={handleChange}
-                placeholder="what's your name?"
+                placeholder="what's your email?"
                 className='bg-tertiary py-6 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-nonr font-medium ' />
 
             </label>
             <label className=' flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Name</span>
+              <span className='text-white font-medium mb-4'>Your Message</span>
 
-              <input 
-                type="text"
-                name="name"
-                value={form.name}
+              <textarea
+                rows="7" 
+                name="message"
+                value={form.message}
                 onChange={handleChange}
-                placeholder="what's your name?"
-                className='bg-tertiary py-6 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-nonr font-medium ' />
+                placeholder="what do you want to say?"
+                className='bg-tertiary py-6 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-nonr font-medium' 
+              />
 
             </label>
 
+            <button
+              type='submit'
+              className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
+               {loading? 'Sending..' : 'Send'} 
+            </button>
 
 
 
@@ -80,4 +87,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact, "")
+export default SectionWrapper(Contact, "");
