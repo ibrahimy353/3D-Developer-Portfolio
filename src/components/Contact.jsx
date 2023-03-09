@@ -7,6 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -17,8 +18,40 @@ const Contact = () => {
 
   const [ loading, setLoading] = useState(false);
     
-    const handleChange = (e) =>{} 
-    const handleSubmit = (e) =>{}
+    const handleChange = (e) =>{ 
+      const {name, value} =(e.target);
+      setForm ({...form, [name]: value})
+    } 
+    const handleSubmit = (e) =>{      
+      e.preventDeafult (); //stops the browser from refreshing when subminting the message
+      setLoading(true);
+      
+      emailjs.send(
+        'service_hhfw2up', 
+        'template_7inljqw',
+        {
+          from_name: form.name,
+          to_name: 'ibrahim',
+          from_email: form.email,
+          to_email: 'ibrahim353yusuf@gmail.com',
+          message: form.message,
+        },
+          'RFxr0Vtrs6c_V_tuS'
+        )
+        .then(() => {
+          setLoading('Thank You. I will get back to you as soon as possible.');
+
+          setForm({
+            name:'',
+            email: '',
+            message: '',
+          })   
+    }, (error) =>{
+      console.log(error);
+
+      alert('Oops Something went wrong.')
+    })  
+    }
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
