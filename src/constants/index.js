@@ -175,7 +175,7 @@ import {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Rick does.",
       name: "Chris Blue",
-      designation: "COO",
+      designation: "CTO",
       company: "DEF Corp",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
