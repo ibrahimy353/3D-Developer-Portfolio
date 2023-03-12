@@ -56,7 +56,7 @@ Start the server
   npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173/) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173/) with your browser to see the result and enjoy.
 ## Deployment
 
 To deploy this project and share with friends. after editing to your desire, get to first open account with either [Vercel](https://vercel.com) or [Netlify](http://netlify.com/) OR Any host of your liking and then get to follow the said instructions in the hosting service page then copy the project then and then enjoy.🎉🧨✨
