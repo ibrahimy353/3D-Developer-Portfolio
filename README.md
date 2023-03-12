@@ -1,3 +1,5 @@
+## 3D Dveloper Portfolio
+
 This is a simple website designed to showcase a developer's portfolio using 3D graphics canvas. The project is built using Vite, Three js, Tailwind CSS, and Framer Motion, making it a powerful and flexible tool for creating stunning visuals.
 
 In addition to its core technologies, this project also utilizes higher-order components (HOC) to simplify and streamline the development process. Furthermore,  I have included email js to make it easy for visitors to contact the developer directly from the website.
