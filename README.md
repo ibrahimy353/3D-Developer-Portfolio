@@ -1,4 +1,4 @@
-## 3D Developer Portfolio
+## 3D Developer Portfolio/ Devfolio
 
 This is a simple website designed to showcase a developer's portfolio using 3D graphics canvas. The project is built using Vite, Three js, Tailwind CSS, and Framer Motion, making it a powerful and flexible tool for creating stunning visuals.
 
