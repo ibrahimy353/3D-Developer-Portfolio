@@ -24,7 +24,7 @@ site link: https://ibra1.netlify.app/
 
 ## Table of Contents.
 
-* How to get started and run it locally
+* How to install and run the program locally
 * Deploying the 3D developer portfolio.
 * Acknowledgement
 * Badges
@@ -37,7 +37,7 @@ assuming you have NPM and Node installed on your machine then start by first For
 Clone the project
 
 ```bash
-  git clone https://github.com/ibrahimy353/3D-Developer-Portfolio-2.0.git
+  git clone https://github.com/ibrahimy353/3D-Developer-Portfolio.git
 ```
 
 Go to the project directory using vscode or txt editor you like then
@@ -58,7 +58,32 @@ Start the server
   npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173/) with your browser to see the result and enjoy.
+Open [http://localhost:5173](http://localhost:5173/) with your browser to see the result.
 ## Deployment
 
 To deploy this project and share with friends. after editing to your desire, get to first open account with either [Vercel](https://vercel.com) or [Netlify](http://netlify.com/) OR Any host of your liking and then get to follow the said instructions in the hosting service page then copy the project then and then enjoy.🎉🧨✨
+
+
+## Acknowledgements
+
+- [Jsmastery yuotube page for the inspiration](https://www.youtube.com/watch?v=0fYi8SGA20k).
+
+- [Box shadow](https://box-shadow.dev/).
+- [Shifting background](https://codepen.io/P1N2O/pen/pyBNzX).
+
+ - [How to write a Good readme by Hillary  Nyakundi](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+ - [For converting word document to  markdown (.md file) I used this site](https://alldocs.app/convert-word-docx-to-markdown).
+ 
+
+## Badges
+
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+
+
+## Known Issues
+
+- The 3D canvas of the hero model computer and some of the technologies are not that resposive. 
+## Contributing
+
+Contributions are always welcome!
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
